@@ -1,0 +1,22 @@
+{
+  "name": "grade-calculator",
+  "version": "1.0.0",
+  "description": "Grade calculator for r/argentinaPrograma",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinraul/Grade-calculator.git"
+  },
+  "author": "Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinraul/Grade-calculator/issues"
+  },
+  "homepage": "https://github.com/martinraul/Grade-calculator#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
+}
