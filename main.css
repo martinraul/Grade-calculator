@@ -5,34 +5,40 @@
 }
 
 header {
-    color: white;
-    background-color: rgb(2, 134, 85);
+    color:	#f5f5f5;
     text-align: center;
     border-radius: 6px;
     padding: 5px;
+    font-weight:	bold;
+    border-style: dotted;
+
+    border-color: #f5f5f5;
 }
 
 body {
-    background-color: rgb(255, 199, 42);
-    text-align: center;
+    color:	#D0FFD0;
+	background:	#212121;
+    font-family:	Verdana, Myriad Web, Syntax, sans-serif;
+        text-align: center;
 }
 
 #results {
-    font-weight: bold;
-    color: white;
-    background-color: rgb(2, 134, 85);
-    border-radius: 6px;
+    font-weight: bolder;
+    color:	#FF6600; 
+    border-radius: 6px; ;
 }
 
 #footer {
     color: white;
     font-size: 10px;
     margin-top: 2px;
-    background-color: rgb(2, 134, 85);
+    border-style: dotted;
+    border-color: #f5f5f5;
     text-align: center;
     border-radius: 6px;
     padding: 5px;
 }
+
 
 #calc-buttons {
     margin: 0 auto;
@@ -41,6 +47,11 @@ body {
 #form{
     list-style: none;
 }
+
+input {
+    background-color:#D0FFD0;
+    width: 100%;
+  }
 
 button {
     padding: 6px;

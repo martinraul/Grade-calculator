@@ -1,5 +1,6 @@
 "use strict";
 let myArray = [];
+
 const $averageButton = document.querySelector("#average-button");
 const $addButton = document.querySelector("#add-button");
 const $minButton = document.querySelector("#min-button");
@@ -42,7 +43,7 @@ $minButton.onclick = function () {
 $maxButton.onclick = function () {
 	createArray();
 	maxGradeCalculation();
-	
+
 }
 
 $addButton.onclick = function () {
@@ -51,5 +52,32 @@ $addButton.onclick = function () {
 
 $resetButton.onclick = function () {
 	myArray = [];
-	document.getElementById("results").style.display = 'none';
+	removeResults()
 }
+
+function removeResults(){
+	var averageGrade = document.getElementById("results");
+		averageGrade.style.display = "none";
+}
+/*
+function removeResults(){
+
+	function removeAverage() {
+		var averageGrade = document.getElementById("average-grade");
+		averageGrade.parentNode.removeChild(averageGrade);
+	}
+
+	function removeMax(){
+		var maxGrade = document.getElementById("max-grade");
+		maxGrade.parentNode.removeChild(maxGrade);
+	}
+
+	function removeMin() {
+		var minGrade = document.getElementById("min-grade");
+			minGrade.parentNode.removeChild(minGrade);
+	}
+	removeAverage()
+	removeMax()
+	removeMin()
+	}
+	*/

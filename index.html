@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-		<title>📝GRADE CALCULATOR</title>
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>📝GRADE CALCULATOR</title>
+	<link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
 
-	<body>
-		<div class="container">
-			<header>
-				<h1>📝GRADE CALCULATOR</h1>
-			</header>
-			<br>
-			<div class="row mt-1">
-				<div class="col-sm">
-					<form id="form"  "list-style: none">
-						<li><input type="number" class="grade" placeholder="Your grade here"></li>
-						<li><input type="number" class="grade" placeholder="Your grade here"></li>
-						<li><input type="number" class="grade" placeholder="Your grade here"></li>
-						<li><input type="number" class="grade" placeholder="Your grade here"></li>
-						<li><input type="number" class="grade" placeholder="Your grade here"></li>
-					</form>
-					<br>
-					<div class="col-sm">
-						<button id="add-button">Add blank field</button>
-						<button id="reset-button" type="reset" form="form" name="reset">Reset</button>
-					</div>
+<body>
+	<div class="container">
+		<header>
+			<h1>📝GRADE CALCULATOR</h1>
+		</header><br>
+		<div class="row">
+			<div class="col-6">
+				<form id="form">
+					<li><input type="number" class="grade" placeholder="Your grade here"></li>
+					<li><input type="number" class="grade" placeholder="Your grade here"></li>
+					<li><input type="number" class="grade" placeholder="Your grade here"></li>
+					<li><input type="number" class="grade" placeholder="Your grade here"></li>
+					<li><input type="number" class="grade" placeholder="Your grade here"></li>
+				</form>
 			</div>
-			<div class="col-sm" id="calc-buttons">
-					<button id="average-button">Average is</button><br>
-					<button id="min-button">Lowest Grade</button><br>
-					<button id="max-button">Highest Grade</button><br>
-					<br>
+			<div class="col-6" id="calc-buttons">
+				<button id="average-button">Average is</button><br>
+				<button id="min-button">Lowest Grade</button><br>
+				<button id="max-button">Highest Grade</button><br>
 			</div>
-			</div><br>
-			<div class="col justify-content-md-center" id="results">
-				<div id="grade-average"></div>
-				<div id="grade-min"></div>
-				<div id="grade-max"></div>
-			</div>
-				<p class="text-right" id="footer">By Martin(2020)</p>
-			</div>
+		</div> <br>
+		<div class="row justify-content-md-center">
+			<button id="add-button">Add blank field</button>
+			<button id="reset-button" type="reset" form="form" name="reset">Reset</button>
+		</div><br>
+		<div class="justify-content-md-center" id="results">
+		</div><br>
+		<div>
+			<p class="text-right" id="footer">By Martin(2020)</p>
 		</div>
-		<script src="main.js"> </script>
-		<script src="calculos.js"> </script>
-	</body>
+	</div>
+	<script src="main.js"> </script>
+	<script src="calcs.js"> </script>
+</body>
 
 </html>
