@@ -2,3 +2,6 @@
  Grade calculator for r/argentinaPrograma
 
 Working link → https://martinraul.github.io/Grade-calculator/
+
+-Bootstrap
+-Cypress
