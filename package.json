@@ -4,6 +4,9 @@
   "description": "Grade calculator for r/argentinaPrograma",
   "main": "index.html",
   "scripts": {
+    "empezar":"http-server",
+    "cypress-open": "cypress open",
+    "cypress-run": "cypress run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +21,8 @@
   "homepage": "https://github.com/martinraul/Grade-calculator#readme",
   "dependencies": {
     "bootstrap": "^4.5.0"
+  },
+  "devDependencies": {
+    "cypress": "^4.8.0"
   }
 }

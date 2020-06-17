@@ -1,65 +1,64 @@
-.container {
-    width: 600px;
-    margin: auto;
-    margin-top: 30px;
+.container-fluid {
+  width: 600px;
+  margin: auto;
+  margin-top: 30px;
 }
 
 header {
-    color:	#f5f5f5;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    font-weight:	bold;
-    border-style: dotted;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-weight: bold;
+  border-style: dotted;
 
-    border-color: #f5f5f5;
+  border-color: #f5f5f5;
 }
 
 body {
-    color:	#D0FFD0;
-	background:	#212121;
-    font-family:	Verdana, Myriad Web, Syntax, sans-serif;
-        text-align: center;
+  color: #d0ffd0;
+  background: #212121;
+  font-family: Verdana, Myriad Web, Syntax, sans-serif;
+  text-align: center;
 }
 
 #results {
-    font-weight: bolder;
-    color:	#FF6600; 
-    border-radius: 6px; ;
+  font-weight: bolder;
+  color: #ff6600;
+  border-radius: 6px;
 }
 
 #footer {
-    color: white;
-    font-size: 10px;
-    margin-top: 2px;
-    border-style: dotted;
-    border-color: #f5f5f5;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
+  color: white;
+  font-size: 10px;
+  margin-top: 2px;
+  border-style: dotted;
+  border-color: #f5f5f5;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
 }
-
 
 #calc-buttons {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
-#form{
-    list-style: none;
+#form {
+  list-style: none;
 }
 
 input {
-    background-color:#D0FFD0;
-    width: 100%;
-  }
+  background-color: #d0ffd0;
+  width: 100%;
+}
 
 button {
-    padding: 6px;
-    font-size: 15px;
-    color: white;
-    background-color: rgb(200, 15, 46);
-    border-radius: 6px;
-    border: 1px solid rgb(2, 134, 85);
-    transition-duration: 0.4s;
-    margin-bottom: 3px;
+  padding: 6px;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(200, 15, 46);
+  border-radius: 6px;
+  border: 1px solid rgb(2, 134, 85);
+  transition-duration: 0.4s;
+  margin-bottom: 3px;
 }

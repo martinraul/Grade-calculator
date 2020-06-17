@@ -8,57 +8,88 @@ const $maxButton = document.querySelector("#max-button");
 const $resetButton = document.querySelector("#reset-button");
 
 function addInput() {
-	const newInput = document.createElement("input");
-	const node = document.createElement("li");
+  const newInput = document.createElement("input");
+  const node = document.createElement("li");
 
-	newInput.type = "number";
-	newInput.className = "grade";
-	newInput.placeholder = "Your grade here";
+  newInput.type = "number";
+  newInput.className = "grade";
+  newInput.placeholder = "Your grade here";
 
-	node.appendChild(newInput);
-	document.querySelector("#form").appendChild(node);
+  node.appendChild(newInput);
+  document.querySelector("#form").appendChild(node);
 }
 
 function createArray() {
-	const $allGrades = document.querySelectorAll("#form > li > input");
-	for (let i = 0; i < $allGrades.length; i++) {
-		if ($allGrades[i].value !== "") {
-			let item = Number(document.querySelectorAll("#form > li > input").item(i).value);
-			myArray.push(item);
-		};
-	};
-};
+  const $allGrades = document.querySelectorAll("#form > li > input");
+  for (let i = 0; i < $allGrades.length; i++) {
+    if ($allGrades[i].value === "") {
+      $allGrades[i].className = "bg-warning";
+      $allGrades[i].placeholder = "This field is empty";
+    }
+    if ($allGrades[i].value !== "") {
+      let item = Number(
+        document.querySelectorAll("#form > li > input").item(i).value
+      );
+      myArray.push(item);
+    }
+  }
+}
 
 $averageButton.onclick = function () {
-	createArray();
-	averageCalculation();
-	console.log(myArray);
-}
+  createArray();
+  console.log(myArray);
+  if (myArray.length == 0) {
+    emptyFieldsAlert();
+    return false;
+  }
+  averageCalculation();
+};
 
 $minButton.onclick = function () {
-	createArray();
-	minGradeCalculation();
-}
+  createArray();
+  if (myArray.length == 0) {
+    emptyFieldsAlert();
+    return false;
+  }
+  minGradeCalculation();
+};
 
 $maxButton.onclick = function () {
-	createArray();
-	maxGradeCalculation();
-
-}
+  createArray();
+  if (myArray.length == 0) {
+    emptyFieldsAlert();
+    return false;
+  }
+  maxGradeCalculation();
+};
 
 $addButton.onclick = function () {
-	addInput();
-}
+  addInput();
+};
 
 $resetButton.onclick = function () {
-	myArray = [];
-	removeResults()
+  myArray = [];
+  removeResults();
+  removeWarnings();
+};
+
+function removeResults() {
+  var averageGrade = document.getElementById("results");
+  averageGrade.innerHTML = "";
 }
 
-function removeResults(){
-	var averageGrade = document.getElementById("results");
-		averageGrade.style.display = "none";
+function removeWarnings() {
+  var warning = document.querySelectorAll(".bg-warning");
+  for (let i = 0; i < warning.length; i++) {
+    warning[i].className = "grade";
+    warning[i].placeholder = "Your grade here";
+  }
 }
+
+function emptyFieldsAlert() {
+  alert("You must fill at least 1 field");
+}
+
 /*
 function removeResults(){
 
