@@ -3,5 +3,5 @@
 
 Working link → https://martinraul.github.io/Grade-calculator/
 
--Bootstrap
--Cypress
+Made with HTML, Bootstrap CSS and JavaScript. Cypress.io for testing
+
